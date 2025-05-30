@@ -1,3 +1,14 @@
 body {
   background-color: blue;
 }
+div{
+    background: url("./bg.jpg") no-repeat center center ;
+    background-size: cover;}
+h1{
+    color: rgb(252, 151, 19);
+}
+
+p{
+    font-size: 32px;
+    color: blanchedalmond;
+}

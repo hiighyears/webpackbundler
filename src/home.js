@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESTAURANT</title>
-</head>
-<body>
-    <header><nav><button>Home</button><button>Menu</button><button>About</button></nav></header>
-    <div id="content">
-        <!-- <h1>RESTAURANT HEADLINE</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+function initialLoadPage(){
+const content =  document.querySelector("#content");
+content.innerHTML="";
+const header = document.createElement("h1");
+header.textContent = "Home Page";
+content.appendChild(header);
+const para = document.createElement("p");
+para.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Dicta temporibus dolorum veritatis voluptate esse, vel suscipit tempore est id natus 
             libero quisquam repellendus, similique distinctio non numquam inventore? Perferendis, officiis.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -20,8 +16,7 @@
             libero quisquam repellendus, similique distinctio non numquam inventore? Perferendis, officiis.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Dicta temporibus dolorum veritatis voluptate esse, vel suscipit tempore est id natus 
-            libero quisquam repellendus, similique distinctio non numquam inventore? Perferendis, officiis.</p> -->
-    </div>
-    
-</body>
-</html>
+            libero quisquam repellendus, similique distinctio non numquam inventore? Perferendis, officiis.`;
+content.appendChild(para);}
+
+export {initialLoadPage};
